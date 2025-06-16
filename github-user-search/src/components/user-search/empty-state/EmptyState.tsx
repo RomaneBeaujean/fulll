@@ -27,7 +27,7 @@ export default function EmptyState({ type }: EmptyStateProps) {
     const { icon, mainLabel, secondaryLabel } = content[type];
 
     return (
-        <div className="empty-state">
+        <div className="empty-state" data-testid="empty-state">
             <div className="empty-state-icon">
                 <Icon name={icon as IconName} />
             </div>

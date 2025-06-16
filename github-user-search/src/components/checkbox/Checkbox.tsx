@@ -28,6 +28,7 @@ export default function Checkbox({
         <label className={`checkbox ${className}`}>
             <input
                 ref={checkboxRef}
+                aria-label="checkbox"
                 type="checkbox"
                 checked={checked}
                 onChange={onChange}

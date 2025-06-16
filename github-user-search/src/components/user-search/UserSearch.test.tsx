@@ -186,7 +186,7 @@ describe("UserSearch", () => {
         enableEdition();
         clickOnToolbarCheckbox();
         expect(screen.getByTestId("search-results")).toBeInTheDocument();
-        const lastCallProps = mockSearchResults.mock.calls.at(-1)?.[0];
+        const lastCallProps = mockSearchResults.mock.calls.slice(-1)[0]?.[0];
         expect(lastCallProps.selectedUsers).toEqual(fakeUsers.map((user) => user.id));
     });
 

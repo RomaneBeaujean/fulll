@@ -104,7 +104,7 @@ export default function UserSearch() {
   }
 
   return (
-    <div className="user-search">
+    <div className="user-search" data-testid="user-search">
       <SearchInput handleSearch={handleSearch} typingDelay={500} />
       <EditModeToggle editable={editable} onToggle={() => setEditable(!editable)} />
       {renderEditToolbar && <EditToolbar

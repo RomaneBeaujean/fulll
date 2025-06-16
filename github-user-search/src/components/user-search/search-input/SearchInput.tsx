@@ -22,9 +22,10 @@ export default function SearchInput({ handleSearch, typingDelay }: SearchInputPr
     <div className="search-input">
       <input
         aria-label="User name"
-        type="text"
         placeholder="User name"
+        type="text"
         value={inputValue}
+        data-testid="search-input"
         onChange={e => setInputValue(e.target.value)}
       />
     </div>

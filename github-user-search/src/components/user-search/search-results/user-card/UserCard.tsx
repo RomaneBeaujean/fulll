@@ -12,7 +12,7 @@ export interface UserCardProps {
 export default function UserCard({ user, editable, selected, handleSelectUser }: UserCardProps) {
 
   return (
-    <div className={`user-card ${selected ? "selected" : ""}`}>
+    <div className={`user-card ${selected ? "selected" : ""}`} data-testid={`user-${user.id}`}>
       {editable && <div className="user-checkbox">
         <Checkbox checked={selected} onChange={() => handleSelectUser(user.id)} />
       </div>}

@@ -22,7 +22,7 @@ export default function EditToolbar({
     const label = `${selected} item${selected === 1 ? '' : 's'} selected`;
 
     return (
-        <div className="edit-toolbar">
+        <div className="edit-toolbar" data-testid="edit-toolbar">
             <Checkbox
                 checked={isChecked}
                 onChange={handleSelectAll}
@@ -36,6 +36,7 @@ export default function EditToolbar({
                     title="Duplicate"
                     aria-label="Duplicate"
                     type="button"
+                    data-testid="duplicate-button"
                 >
                     <Icon name="copy" />
                 </button>
@@ -45,6 +46,7 @@ export default function EditToolbar({
                     title="Delete"
                     aria-label="Delete"
                     type="button"
+                    data-testid="delete-button"
                 >
                     <Icon name="trash" />
                 </button>

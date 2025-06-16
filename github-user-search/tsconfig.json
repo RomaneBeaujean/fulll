@@ -6,6 +6,10 @@
         "models/*"
       ]
     },
+    "types": [
+      "node",
+      "playwright/test"
+    ],
     "target": "es5",
     "lib": [
       "dom",
@@ -27,6 +31,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "__tests__/**/*.ts",
+    "playwright.config.ts"
   ]
 }
