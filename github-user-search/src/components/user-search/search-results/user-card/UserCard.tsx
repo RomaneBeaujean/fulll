@@ -21,8 +21,8 @@ export default function UserCard({ user, editable, selected, handleSelectUser }:
           <img src={user.avatar_url} alt={`${user.login}'s avatar`} />
         </div>
         <div className="user-info">
-          <h3 className="user-login">{user.login}</h3>
           <p className="user-id">ID: {user.id}</p>
+          <h3 className="user-login">{user.login}</h3>
         </div>
       </div>
       <div className="user-profile">

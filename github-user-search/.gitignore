@@ -1,7 +1,7 @@
 /node_modules
 /.pnp
 .pnp.js
-tests-results
+test-results
 /coverage
 /build
 .DS_Store
