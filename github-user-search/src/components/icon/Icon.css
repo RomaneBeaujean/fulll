@@ -1,0 +1,20 @@
+.icon {
+    color: inherit;
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 20px;
+    margin: 4px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon svg {
+    color: inherit;
+    fill: currentcolor;
+    height: inherit;
+    min-height: inherit;
+    min-width: inherit;
+    width: inherit;
+}
